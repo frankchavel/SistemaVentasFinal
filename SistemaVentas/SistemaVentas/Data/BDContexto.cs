@@ -13,8 +13,6 @@ namespace SistemaVentasPOS.Data
         // Definimos las propiedades DbSet para cada tabla de nuestra base de datos
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Venta> Ventas { get; set; }
-        public DbSet<DetalleVenta> DetalleVentas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -26,8 +24,6 @@ namespace SistemaVentasPOS.Data
             modelBuilder.Entity<Cliente>().ToTable("Cliente");
             modelBuilder.Entity<Usuario>().ToTable("Usuario");
             modelBuilder.Entity<Producto>().ToTable("Producto");
-            modelBuilder.Entity<Venta>().ToTable("Venta");
-            modelBuilder.Entity<DetalleVenta>().ToTable("DetalleVenta");
 
             base.OnModelCreating(modelBuilder);
         }
