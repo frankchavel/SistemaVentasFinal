@@ -1,0 +1,20 @@
+# Carpeta de Visual Studio para archivos de usuario
+.vs/
+
+# Archivos de depuración y temporales
+[Dd]ebug/
+[Rr]elease/
+*.suo
+*.user
+*.pdb
+*.obj
+
+# Archivos de configuración de Visual Studio
+*.vsidx
+
+# Ignorar binarios de compilación
+[Bb]in/
+
+# Otros archivos comunes
+*.log
+TestResults/
