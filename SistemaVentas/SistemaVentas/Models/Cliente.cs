@@ -8,7 +8,7 @@ namespace SistemaVentasPOS.Models
         [Key]
         public int IdCliente { get; set; }
 
-        [Required(ErrorMessage ="El nombre del documento es obligatorio")]
+        [Required(ErrorMessage ="El nombre del documento es obligatorio es necesario")]
         [StringLength(15)]
         public string TipoDocumento { get; set; }
 
